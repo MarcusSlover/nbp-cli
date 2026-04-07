@@ -46,7 +46,7 @@ archives:
       - README.md
       - completions/*
 
-homebrew:
+brews:
   - repository:
       owner: MarcusSlover
       name: homebrew-tap
