@@ -27,11 +27,13 @@ builds:
     binary: nbp
 
 archives:
-  - format: tar.gz
+  - formats:
+      - tar.gz
     # use zip for windows archives
     format_overrides:
       - goos: windows
-        format: zip
+        formats:
+          - zip
     name_template: >-
       {{ .ProjectName }}_
       {{- title .Os }}_
@@ -44,7 +46,7 @@ archives:
       - README.md
       - completions/*
 
-brews:
+homebrew:
   - repository:
       owner: MarcusSlover
       name: homebrew-tap
